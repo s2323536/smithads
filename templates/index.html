@@ -9,25 +9,43 @@
   <!-- Document Title, Description, and Author -->
   <title>詠鑫玻璃</title>
   <script src="{{ url_for('static', filename='concept-bsb.css') }}"></script>
-  <meta name="description" content="Concept is a Bootstrap 5 Portfolio Template.">
-  <meta name="author" content="BootstrapBrain">
+  <!--<meta name="description" content="Concept is a Bootstrap 5 Portfolio Template.">
+  <meta name="author" content="BootstrapBrain">-->
 
   <!-- Favicon and Touch Icons -->
-  <link rel="icon" type="image/png" sizes="512x512" href="./assets/favicon/favicon-512x512.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="./assets/favicon/favicon-512x512.jpg">
 
   <!-- CSS Files -->
   <link rel="stylesheet" href="./assets/css/concept-bsb.css">
+ 
+  <style>
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 999;
+    }
+    .navbar {
+      height: 50px;
+    }
+    .dropdownb {
+      left: -90px; /* 調整左邊距 */
+    }
+    .hr {
+  margin-bottom: 0.5rem;
+}
+  </style>
 </head>
 
 <body>
   <!-- Header -->
   <header id="header">
-
     <!-- Navbar 1 - Bootstrap Brain Component -->
-    <nav class="navbar navbar-expand-md bg-light bsb-navbar bsb-navbar-hover bsb-navbar-caret">
+    <nav class="navbar navbar-expand-md bg-light bsb-navbar bsb-navbar-hover bsb-navbar-caret" >
       <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img src="./assets/img/header/concept-logo.svg" class="bsb-tpl-logo" alt="">
+        <a class="navbar-brand" href="#glass">
+          <img src="./assets/img/header/concept-logo.jpg" class="bsb-tpl-logo" alt="">
         </a>
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
@@ -42,44 +60,53 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#!" id="accountDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Explore</a>
-                <ul class="dropdown-menu border-0 shadow bsb-zoomIn" aria-labelledby="accountDropdown">
-                  <li><a class="dropdown-item" href="blog.html">Blog</a></li>
-                  <li><a class="dropdown-item" href="single.html">Post</a></li>
-                  <li><a class="dropdown-item" href="project.html">Project</a></li>
-                </ul>
+                <a class="nav-link active" aria-current="page" href="#glass">首頁</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="services.html">Services</a>
+                <a class="nav-link" href="#main">玻璃種類</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#process">訂製程序</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#query">規格評估報價</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://tw.bid.yahoo.com/item/%E5%8F%B0%E7%81%A3%E8%A3%BD%E9%80%A0-%E7%8E%BB%E7%92%83%E5%AE%A2%E8%A3%BD%E5%8C%96-%E7%A3%A8%E7%A0%82%E7%8E%BB%E7%92%83-%E9%8F%A1%E5%AD%90-%E5%BC%B7%E5%8C%96%E7%8E%BB%E7%92%83-%E7%83%A4%E6%BC%86%E7%8E%BB-101096830407" target="_blank">下單訂製</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#!" id="accountDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">聯絡我</a>
+                <ul class="dropdown-menu border-0 shadow bsb-zoomIn dropdownb" aria-labelledby="accountDropdown">
+                  <li><a class="dropdown-item" href="#" style="font-size: 8px;">LINE ID:s2323536</a></li>
+                  <li><a class="dropdown-item" href="#query" style="font-size: 8px;">E-MAIL:rueishian.chen@gmail.com</a></li>
+                </ul>
+              </li>
+              <!--
               <li class="nav-item">
                 <a class="nav-link" href="portfolio.html">Portfolio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
+              </li>-->
             </ul>
+            <!--</div>-->
           </div>
         </div>
       </div>
     </nav>
 
     <!-- Hero 1 - Bootstrap Brain Component -->
-    <section class="px-5 py-8 py-xxl-20 background-position-center background-size-cover bsb-overlay bsb-hover-pull" style="background-image: url('./assets/img/header/hero-home.jpg');">
+    <section id="glass" class="px-5 py-8 py-xxl-20 background-position-center background-size-cover bsb-overlay bsb-hover-pull" style="background-image: url('./assets/img/header/hero-home.jpg');">
       <div class="container">
         <div class="row justify-content-md-center">
           <div class="col-12 col-md-11 col-lg-9 col-xl-7 col-xxl-6 text-center text-white">
-            <h1 class="display-3 fw-bold mb-3">Art of Design</h1>
-            <p class="lead mb-5">Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.</p>
+            <h1 class="display-3 fw-bold mb-3">詠鑫玻璃</h1>
+            <p class="lead mb-5">居家玻璃 x 科技玻璃 x 工業玻璃 x 光學玻璃</p>
+            <p class="lead mb-5">玻璃訂製,加工,安裝</p>
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-              <button type="button" class="btn btn-light btn-lg px-4 gap-3">Free Consultation</button>
-              <button type="button" class="btn btn-outline-light btn-lg px-4">Buy Credits</button>
+              <button type="button" class="btn btn-outline-light btn-lg px-4" onclick="window.location.href='#query'">規格評估</button>
+              <!--<button type="button" class="btn btn-outline-light btn-lg px-4" onclick="window.location.href='https://tw.bid.yahoo.com/item/%E5%8F%B0%E7%81%A3%E8%A3%BD%E9%80%A0-%E7%8E%BB%E7%92%83%E5%AE%A2%E8%A3%BD%E5%8C%96-%E7%A3%A8%E7%A0%82%E7%8E%BB%E7%92%83-%E9%8F%A1%E5%AD%90-%E5%BC%B7%E5%8C%96%E7%8E%BB%E7%92%83-%E7%83%A4%E6%BC%86%E7%8E%BB-101096830407';">下單訂製</button>-->
+              <button type="button" class="btn btn-outline-light btn-lg px-4" onclick="window.open('https://tw.bid.yahoo.com/item/%E5%8F%B0%E7%81%A3%E8%A3%BD%E9%80%A0-%E7%8E%BB%E7%92%83%E5%AE%A2%E8%A3%BD%E5%8C%96-%E7%A3%A8%E7%A0%82%E7%8E%BB%E7%92%83-%E9%8F%A1%E5%AD%90-%E5%BC%B7%E5%8C%96%E7%8E%BB%E7%92%83-%E7%83%A4%E6%BC%86%E7%8E%BB-101096830407', '_blank'); return false;">下單訂製</button>
             </div>
           </div>
         </div>
@@ -96,23 +123,23 @@
       <div class="container mb-5 mb-md-6">
         <div class="row justify-content-md-center">
           <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6 text-center">
-            <h2 class="mb-4 display-5">Portfolio</h2>
-            <p class="text-secondary mb-4 mb-md-5">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque et neque id ligula mattis commodo.</p>
-            <hr class="w-50 mx-auto mb-0 text-secondary">
+            <h2 class="mb-3 display-5">居家常用的玻璃鏡子種類</h2>
+            <p class="text-secondary mb-1 mb-md-1">更多玻璃,鏡子規格種類再請<a href="#query">來信</a>或加LINE洽詢</p>
+            <!--<hr class="w-50 mx-auto mb-0 text-secondary">-->
           </div>
         </div>
       </div>
 
-      <div class="container overflow-hidden">
+      <div class="container overflow-hidden" style="margin-bottom: -100px;">
         <div class="row gy-3 gy-md-2 bsb-project-1-grid">
           <div class="col-12 col-md-6 col-lg-3 bsb-project-1-item">
             <figure class="rounded rounded-4 overflow-hidden bsb-hover-overlay">
               <a href="#!">
-                <img class="img-fluid bsb-scale-up bsb-hover-scale" loading="lazy" src="./assets/img/portfolio/masonry-img-1.jpg" alt="">
+                <img class="img-fluid bsb-scale-up bsb-hover-scale" loading="lazy" src="./assets/img/portfolio/masonry-img-1.jpg" alt="" >
               </a>
               <figcaption>
-                <h3 class="text-white bsb-hover-fadeInLeft">Charming Concept</h3>
-                <div class="text-white bsb-hover-fadeInRight">Photography</div>
+                <h3 class="text-white bsb-hover-fadeInLeft">長虹玻璃</h3>
+                <div class="text-white bsb-hover-fadeInRight">5mm厚度</div>
               </figcaption>
             </figure>
           </div>
@@ -120,11 +147,11 @@
           <div class="col-12 col-md-6 col-lg-6 bsb-project-1-item">
             <figure class="rounded rounded-4 overflow-hidden bsb-hover-overlay">
               <a href="#!">
-                <img class="img-fluid bsb-scale bsb-hover-scale-up" loading="lazy" src="./assets/img/portfolio/masonry-img-2.jpg" alt="">
+                <img class="img-fluid bsb-scale bsb-hover-scale-up" loading="lazy" src="./assets/img/portfolio/masonry-img-2.jpg" alt="" >
               </a>
               <figcaption>
-                <h3 class="text-white bsb-hover-fadeInUp">Linear Architecture</h3>
-                <div class="text-white bsb-hover-fadeInDown">Inspiration</div>
+                <h3 class="text-white bsb-hover-fadeInUp">防腐蝕明鏡</h3>
+                <div class="text-white bsb-hover-fadeInDown">無銅明鏡,黑鏡,灰鏡,茶鏡(3mm,5mm)</div>
               </figcaption>
             </figure>
           </div>
@@ -132,11 +159,11 @@
           <div class="col-12 col-md-6 col-lg-3 bsb-project-1-item">
             <figure class="rounded rounded-4 overflow-hidden bsb-hover-overlay">
               <a href="#!">
-                <img class="img-fluid bsb-scale-up bsb-hover-scale" loading="lazy" src="./assets/img/portfolio/masonry-img-3.jpg" alt="">
+                <img class="img-fluid bsb-scale-up bsb-hover-scale" loading="lazy" src="./assets/img/portfolio/masonry-img-3.jpg" alt="" >
               </a>
               <figcaption>
-                <h3 class="text-white bsb-hover-fadeInLeft">Endless Looks</h3>
-                <div class="text-white bsb-hover-fadeInRight">Nature</div>
+                <h3 class="text-white bsb-hover-fadeInLeft">耐熱石英玻璃</h3>
+                <div class="text-white bsb-hover-fadeInRight">可耐1000度高溫</div>
               </figcaption>
             </figure>
           </div>
@@ -147,8 +174,8 @@
                 <img class="img-fluid bsb-scale-up bsb-hover-scale" loading="lazy" src="./assets/img/portfolio/masonry-img-4.jpg" alt="">
               </a>
               <figcaption>
-                <h3 class="text-white bsb-hover-fadeInLeft">Sleek Typography</h3>
-                <div class="text-white bsb-hover-fadeInRight">Design</div>
+                <h3 class="text-white bsb-hover-fadeInLeft">彩色透光玻璃</h3>
+                <div class="text-white bsb-hover-fadeInRight">茶玻,黑玻,灰玻,藍玻(5,8mm)</div>
               </figcaption>
             </figure>
           </div>
@@ -159,8 +186,8 @@
                 <img class="img-fluid bsb-scale-up bsb-hover-scale" loading="lazy" src="./assets/img/portfolio/masonry-img-5.jpg" alt="">
               </a>
               <figcaption>
-                <h3 class="text-white bsb-hover-fadeInLeft">Ebony Vintage</h3>
-                <div class="text-white bsb-hover-fadeInRight">Fashion</div>
+                <h3 class="text-white bsb-hover-fadeInLeft">玻璃加工</h3>
+                <div class="text-white bsb-hover-fadeInRight">水刀,雷射</div>
               </figcaption>
             </figure>
           </div>
@@ -171,8 +198,8 @@
                 <img class="img-fluid bsb-scale-up bsb-hover-scale" loading="lazy" src="./assets/img/portfolio/masonry-img-6.jpg" alt="">
               </a>
               <figcaption>
-                <h3 class="text-white bsb-hover-fadeInLeft">Orange Shine</h3>
-                <div class="text-white bsb-hover-fadeInRight">Food</div>
+                <h3 class="text-white bsb-hover-fadeInLeft">強化拷漆玻璃</h3>
+                <div class="text-white bsb-hover-fadeInRight">強化磁性拷漆玻璃</div>
               </figcaption>
             </figure>
           </div>
@@ -183,8 +210,8 @@
                 <img class="img-fluid bsb-scale-up bsb-hover-scale" loading="lazy" src="./assets/img/portfolio/masonry-img-7.jpg" alt="">
               </a>
               <figcaption>
-                <h3 class="text-white bsb-hover-fadeInLeft">Boat Adventure</h3>
-                <div class="text-white bsb-hover-fadeInRight">Health</div>
+                <h3 class="text-white bsb-hover-fadeInLeft">銀霞</h3>
+                <div class="text-white bsb-hover-fadeInRight">玻璃</div>
               </figcaption>
             </figure>
           </div>
@@ -195,8 +222,8 @@
                 <img class="img-fluid bsb-scale-up bsb-hover-scale" loading="lazy" src="./assets/img/portfolio/masonry-img-8.jpg" alt="">
               </a>
               <figcaption>
-                <h3 class="text-white bsb-hover-fadeInLeft">Offroad Moves</h3>
-                <div class="text-white bsb-hover-fadeInRight">Nature</div>
+                <h3 class="text-white bsb-hover-fadeInLeft">噴砂霧面</h3>
+                <div class="text-white bsb-hover-fadeInRight">玻璃</div>
               </figcaption>
             </figure>
           </div>
@@ -207,8 +234,8 @@
                 <img class="img-fluid bsb-scale-up bsb-hover-scale" loading="lazy" src="./assets/img/portfolio/masonry-img-9.jpg" alt="">
               </a>
               <figcaption>
-                <h3 class="text-white bsb-hover-fadeInLeft">Cozy Occupancy</h3>
-                <div class="text-white bsb-hover-fadeInRight">Design</div>
+                <h3 class="text-white bsb-hover-fadeInLeft">桌板</h3>
+                <div class="text-white bsb-hover-fadeInRight">玻璃</div>
               </figcaption>
             </figure>
           </div>
@@ -217,78 +244,114 @@
     </section>
 
     <!-- Service 1 - Bootstrap Brain Component -->
-    <section class="bg-light py-5 py-xl-8">
+    <section id="process" class="bg-light py-5 py-xl-8">
       <div class="container mb-5 mb-md-6">
         <div class="row justify-content-md-center">
           <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6 text-center">
-            <h2 class="mb-4 display-5">Services</h2>
-            <p class="text-secondary mb-4 mb-md-5">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque et neque id ligula mattis commodo.</p>
+            <h2 class="mb-4 display-5">訂製程序</h2>
+            <!--<p class="text-secondary mb-4 mb-md-5">請提供尺吋厚度,規格,並留言討論</p>-->
             <hr class="w-50 mx-auto mb-0 text-secondary">
           </div>
         </div>
       </div>
 
-      <div class="container overflow-hidden">
+      <div class="container overflow-hidden text-center">
         <div class="row gy-5 gy-md-6 gx-xl-6">
           <div class="col-12 col-sm-6 col-lg-4">
-            <div class="text-center">
+            <!--<div class="text-center">-->
               <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-1-circle-fill text-primary mb-4" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383h1.312Z" />
               </svg>
-              <h5 class="m-2">SEO Consulting</h5>
-              <p class="m-0 text-secondary">Vestibulum bibendum, lorem a blandit lacinia, nisi velit posuere nisl, vel placerat magna mauris mollis maximus est.</p>
-            </div>
+              <h5 class="m-2">提出規格需求</h5>
+              <p class="m-0 text-secondary">
+                <div style="text-align: left; padding-left: 140px;">
+                <li>長(cm)x寬(cm)x厚度(mm)</li>
+                <li>數量</li>
+                <li>用途</li>
+                <li>加工:光邊,鑽孔,L角,切角,圓角,方形孔(提供圖面)</li>
+                </div>
+              </p>
+            <!--</div>-->
           </div>
           <div class="col-12 col-sm-6 col-lg-4">
-            <div class="text-center">
+            <!--<div class="text-center">-->
               <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-2-circle-fill text-primary mb-4" viewBox="0 0 16 16">
                 <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM6.646 6.24c0-.691.493-1.306 1.336-1.306.756 0 1.313.492 1.313 1.236 0 .697-.469 1.23-.902 1.705l-2.971 3.293V12h5.344v-1.107H7.268v-.077l1.974-2.22.096-.107c.688-.763 1.287-1.428 1.287-2.43 0-1.266-1.031-2.215-2.613-2.215-1.758 0-2.637 1.19-2.637 2.402v.065h1.271v-.07Z" />
               </svg>
-              <h5 class="m-2">Web Development</h5>
-              <p class="m-0 text-secondary">Vestibulum bibendum, lorem a blandit lacinia, nisi velit posuere nisl, vel placerat magna mauris mollis maximus est.</p>
-            </div>
+              <div style="text-align: left; padding-left: 140px;">
+              <h5 class="m-2">評估</h5>
+              <p class="m-0 text-secondary">
+              <li>規格,數量討論確認</li>
+              <li>交期(一般規格約3~4天)</li>
+              </p>
+              </div>
+            <!--</div>-->
           </div>
           <div class="col-12 col-sm-6 col-lg-4">
-            <div class="text-center">
+            <!--<div class="text-center">-->
               <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-3-circle-fill text-primary mb-4" viewBox="0 0 16 16">
                 <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0Zm-8.082.414c.92 0 1.535.54 1.541 1.318.012.791-.615 1.36-1.588 1.354-.861-.006-1.482-.469-1.54-1.066H5.104c.047 1.177 1.05 2.144 2.754 2.144 1.653 0 2.954-.937 2.93-2.396-.023-1.278-1.031-1.846-1.734-1.916v-.07c.597-.1 1.505-.739 1.482-1.876-.03-1.177-1.043-2.074-2.637-2.062-1.675.006-2.59.984-2.625 2.12h1.248c.036-.556.557-1.054 1.348-1.054.785 0 1.348.486 1.348 1.195.006.715-.563 1.237-1.342 1.237h-.838v1.072h.879Z" />
               </svg>
-              <h5 class="m-2">Digital Strategy</h5>
-              <p class="m-0 text-secondary">Vestibulum bibendum, lorem a blandit lacinia, nisi velit posuere nisl, vel placerat magna mauris mollis maximus est.</p>
-            </div>
+              <div style="text-align: left; padding-left: 140px;">
+              <h5 class="m-2">下單</h5>
+              <p class="m-0 text-secondary">
+                <li>yahoo電商平台下單</li>
+              </p>
+              </div>
+            <!--</div>-->
           </div>
           <div class="col-12 col-sm-6 col-lg-4">
-            <div class="text-center">
+            <!--<div class="text-center">-->
               <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-4-circle-fill text-primary mb-4" viewBox="0 0 16 16">
                 <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM7.519 5.057c-.886 1.418-1.772 2.838-2.542 4.265v1.12H8.85V12h1.26v-1.559h1.007V9.334H10.11V4.002H8.176c-.218.352-.438.703-.657 1.055ZM6.225 9.281v.053H8.85V5.063h-.065c-.867 1.33-1.787 2.806-2.56 4.218Z" />
               </svg>
-              <h5 class="m-2">Web Design</h5>
-              <p class="m-0 text-secondary">Vestibulum bibendum, lorem a blandit lacinia, nisi velit posuere nisl, vel placerat magna mauris mollis maximus est.</p>
+              <div style="text-align: left; padding-left: 140px;">
+              <h5 class="m-2">製作</h5>
+              <p class="m-0 text-secondary">
+                  <li>裁切</li>
+                  <li>加工</li>
+                  <li>強化</li>
+              </p>
             </div>
+            <!--</div>-->
           </div>
           <div class="col-12 col-sm-6 col-lg-4">
-            <div class="text-center">
+            <!--<div class="text-center">-->
               <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-5-circle-fill text-primary mb-4" viewBox="0 0 16 16">
                 <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0Zm-8.006 4.158c1.74 0 2.924-1.119 2.924-2.806 0-1.641-1.178-2.584-2.56-2.584-.897 0-1.442.421-1.612.68h-.064l.193-2.344h3.621V4.002H5.791L5.445 8.63h1.149c.193-.358.668-.809 1.435-.809.85 0 1.582.604 1.582 1.57 0 1.085-.779 1.682-1.57 1.682-.697 0-1.389-.31-1.53-1.031H5.276c.065 1.213 1.149 2.115 2.72 2.115Z" />
               </svg>
-              <h5 class="m-2">Digital Marketing</h5>
-              <p class="m-0 text-secondary">Vestibulum bibendum, lorem a blandit lacinia, nisi velit posuere nisl, vel placerat magna mauris mollis maximus est.</p>
+              <div style="text-align: left; padding-left: 140px;">
+              <h5 class="m-2">檢測,包裝</h5>
+              <p class="m-0 text-secondary">
+                  <li>外觀目檢</li>
+                  <li>尺吋量測</li>
+                  <li>外觀擦拭</li>
+                  <li>包裝</li>
+              </p>
             </div>
+            <!--</div>-->
           </div>
           <div class="col-12 col-sm-6 col-lg-4">
-            <div class="text-center">
+            <!--<div class="text-center">-->
               <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-6-circle-fill text-primary mb-4" viewBox="0 0 16 16">
                 <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.21 3.855c-1.868 0-3.116 1.395-3.116 4.407 0 1.183.228 2.039.597 2.642.569.926 1.477 1.254 2.409 1.254 1.629 0 2.847-1.013 2.847-2.783 0-1.676-1.254-2.555-2.508-2.555-1.125 0-1.752.61-1.98 1.155h-.082c-.012-1.946.727-3.036 1.805-3.036.802 0 1.213.457 1.312.815h1.29c-.06-.908-.962-1.899-2.573-1.899Zm-.099 4.008c-.92 0-1.564.65-1.564 1.576 0 1.032.703 1.635 1.558 1.635.868 0 1.553-.533 1.553-1.629 0-1.06-.744-1.582-1.547-1.582Z" />
               </svg>
-              <h5 class="m-2">Media Production</h5>
-              <p class="m-0 text-secondary">Vestibulum bibendum, lorem a blandit lacinia, nisi velit posuere nisl, vel placerat magna mauris mollis maximus est.</p>
+              <div style="text-align: left; padding-left: 140px;">
+              <h5 class="m-2">運送</h5>
+              <p class="m-0 text-secondary">            
+                    <li>宅配</li>
+                    <li>專車配送</li>
+                    <li>約時間自取</li>
+              </p>
             </div>
+            <!--</div>-->
           </div>
         </div>
       </div>
     </section>
 
     <!-- Achievement 1 - Bootstrap Brain Component -->
+   <!--
     <section class="py-5 py-xl-8">
       <div class="container mb-5 mb-md-6">
         <div class="row justify-content-md-center">
@@ -350,8 +413,99 @@
         </div>
       </div>
     </section>
+   -->
+    <!-- Contact 1 - Bootstrap Brain Component -->
+    <!--<h5 class="mb-4 display-5 text-center">規格評估</h5>
+    <p class="text-secondary mb-4 mb-md-5 text-center">請提供尺吋厚度,規格,數量,用途,地點,及聯絡資訊</p>-->
+    <div id="query" class="py-5 py-xl-8">
+      <div class="container">
+        <div class="row justify-content-lg-center">
+          <div class="col-12 col-lg-9">
+            <div class="bg-white border rounded shadow-sm overflow-hidden">
+              <!--<form action="#!">-->
+                <div class="text-center py-3">
+                  <h2>規格評估報價</h2>
+                </div>
+              <form id="myForm" method="post" enctype="multipart/form-data" action="/index">
+                <div class="row gy-4 gy-xl-5 p-1 p-xl-2">
+                  <div class="col-12 col-md-6">
+                    <label for="fullname" class="form-label">姓名<span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="fullname" name="name" value="" required>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label for="fullimage" class="form-label">上傳圖片<span class="text-danger">*</span></label>
+                    <input type="file" class="form-control"  name="image" id="image">
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                    <div class="input-group">
+                      <span class="input-group-text">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                        </svg>
+                      </span>
+                      <input type="email" class="form-control" name="email" id="email" value="" required>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label for="phone" class="form-label">電話<span class="text-danger">*</span></label>
+                    <div class="input-group">
+                      <span class="input-group-text">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                          <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                        </svg>
+                      </span>
+                      <input type="tel" class="form-control" name="phone" id="phone" value="">
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
+                    <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="d-grid">
+                      <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="d-grid">
+                      <button type="reset" class="btn btn-primary btn-lg">Reset</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function() {
+    $('#myForm').submit(function(e) {
+      e.preventDefault(); // 阻止表單自動提交
+  
+      var form_data = new FormData($('#myForm')[0]); // 使用 FormData 將表單數據包裝起來
+  
+      $.ajax({
+        type: 'POST',
+        url: '/submit',
+        data: form_data,
+        contentType: false, // 必須設置為 false 才能正確處理文件上傳
+        processData: false, // 必須設置為 false 才能正確處理文件上傳
+        success: function(response) {
+          console.log(response); // 處理後端返回的數據
+        },
+        error: function(xhr, status, error) {
+          console.log(error); // 處理錯誤
+        }
+      });
+    });
+  });
+    </script>
+  
     <!-- Testimonial 1 - Bootstrap Brain Component -->
+  <!--
     <section class="bg-light py-5 py-xl-8">
       <div class="container mb-5 mb-md-6">
         <div class="row justify-content-md-center">
@@ -396,8 +550,9 @@
         </div>
       </div>
     </section>
-
+  -->
     <!-- Client 1 - Bootstrap Brain Component -->
+    <!--
     <section class="py-5 py-xl-8">
       <div class="container mb-5 mb-md-6">
         <div class="row justify-content-md-center">
@@ -454,25 +609,33 @@
         </div>
       </div>
     </section>
-
+    -->
   </main>
 
   <!-- Footer 1 -->
+  
   <footer class="footer">
 
     <!-- Copyright - Bootstrap Brain Component -->
-    <div class="bg-light border-top py-3 py-md-4 py-xl-8">
+   
+    <div class="bg-light border-top py-1 py-md-2 py-xl-4">
       <div class="container overflow-hidden">
-        <div class="row gy-5 gy-md-0">
-          <div class="col-xs-12 col-md-7 order-1 order-md-0">
-            <div class="copyright text-center text-md-start">
-              &copy; 2023. All Rights Reserved.
+        <div class="row gy-3 gy-md-0">
+          <div class="col-md-7 order-1 order-md-0">
+            <div class="text-center text-md-start">
+              {% if myResult %}
+              <h4 style="color: blue; margin-left: 300px;">{{ myResult }}</h4>
+              {% endif %}
+              <!--&copy; 2023. All Rights Reserved.<h4><center>{{myResult}}</center></h4>-->
             </div>
-            <div class="credits text-secondary text-center text-md-start mt-2 fs-7">
+            <!--<div class="credits text-secondary text-center text-md-start mt-2 fs-7">
               Built by <a href="https://bootstrapbrain.com/" class="link-secondary text-decoration-none">BootstrapBrain</a> with <span class="text-primary">&#9829;</span>
-            </div>
+            </div>-->
           </div>
-
+        </div>
+      </div>
+    </div>
+ <!--
           <div class="col-xs-12 col-md-5 order-0 order-md-1">
             <ul class="nav justify-content-center justify-content-md-end">
               <li class="nav-item">
@@ -508,7 +671,7 @@
         </div>
       </div>
     </div>
-
+   -->
   </footer>
 
   <!-- Javascript Files: Vendors -->
@@ -517,7 +680,7 @@
   <script src="./assets/vendor/isotope/isotope.pkgd.min.js"></script>
   <script src="./assets/vendor/isotope/packery-mode.pkgd.min.js"></script>
   <script src="./assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
-
+  
   <!-- Javascript Files: Controllers -->
   <script src="./assets/controller/project-1.js"></script>
 </body>
